@@ -5,6 +5,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!--
+        TODO 1. Enable Dark Theme with force dark
+        If Targeting android devices with API Level 29( Q ) and above and want to rapidly switch to
+        Dark theme without explicitly using DayNight Theme use the theme attribute below
+        NB::Will not work if extending from DayNight Theme
+        -->
+        <item name="android:forceDarkAllowed">true</item>
     </style>
 
 </resources>
