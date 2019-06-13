@@ -10,7 +10,8 @@
         TODO 1. Enable Dark Theme with force dark
         If Targeting android devices with API Level 29( Q ) and above and want to rapidly switch to
         Dark theme without explicitly using DayNight Theme use the theme attribute below
-        NB::Will not work if extending from DayNight Theme
+        NB::Will not work if extending from DayNight Theme and if you do require to disable dark theme on
+        a specific view a similar layout attribute is available
         -->
         <item name="android:forceDarkAllowed">true</item>
     </style>

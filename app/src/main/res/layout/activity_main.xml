@@ -2,8 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/default_margin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/demo_recycler_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:itemCount="8"
+            tools:listitem="@layout/list_item_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

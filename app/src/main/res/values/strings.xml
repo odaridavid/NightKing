@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Night King</string>
+    <string name="label_share">Share</string>
+    <string name="description_simple_demo_image">Simple Demo Image</string>
 </resources>
