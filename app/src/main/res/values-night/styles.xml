@@ -1,13 +1,5 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <!--
-     TODO 1. Change your theme to inherit from a DayNight Theme or A light theme and provide an override
-      in the values-night folder theme
-     TODO 2. Replace all hardcoded values with theme attributes
-     TODO 4. Use Material Components Color Theming Attributes
-     TODO 5. Create Custom Colors for dark theme in -night values resource folder
-     -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!--Material color attributes -->
         <item name="colorPrimary">@color/color_primary</item>
