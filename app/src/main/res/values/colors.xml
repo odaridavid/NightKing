@@ -18,4 +18,8 @@
     <color name="color_on_background">#757575</color>
     <color name="color_on_surface">#000000</color>
     <color name="color_on_error">#000000</color>
+
+    <!--TODO 6. Provide Color variants for both themes,avoid hard coding colors-->
+    <color name="color_event_time">@color/color_primary</color>
+    <color name="color_drawable_tint">#f9a825</color>
 </resources>

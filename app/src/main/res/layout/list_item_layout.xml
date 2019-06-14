@@ -25,7 +25,7 @@
             app:layout_constraintStart_toEndOf="@id/guideline_start"
             app:layout_constraintTop_toBottomOf="@id/guideline_top"
             app:layout_constraintBottom_toBottomOf="@id/demo_venue_text_view"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="@color/color_event_time"
             tools:text="11:30 PM"/>
     <TextView
             android:id="@+id/demo_title_text_view"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:textColor="?attr/colorOnBackground"
             android:drawableStart="@drawable/ic_map"
-            android:drawableTint="?attr/colorSecondary"
+            android:drawableTint="@color/color_drawable_tint"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
             android:drawablePadding="8dp"
             tools:text="Room A"/>
