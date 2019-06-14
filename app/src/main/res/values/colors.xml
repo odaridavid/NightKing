@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--
-    TODO 3. Use Color Scheme From Material Components Guide
-    This Defines Colors that will be used with the light theme
-    -->
+
     <color name="color_primary">#00acc1</color>
     <color name="color_primary_variant">#007c91</color>
     <color name="color_secondary">#ffd600</color>
@@ -19,7 +16,6 @@
     <color name="color_on_surface">#000000</color>
     <color name="color_on_error">#000000</color>
 
-    <!--TODO 6. Provide Color variants for both themes,avoid hard coding colors-->
     <color name="color_event_time">@color/color_primary</color>
     <color name="color_drawable_tint">#f9a825</color>
 </resources>

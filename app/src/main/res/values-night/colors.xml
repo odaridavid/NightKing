@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--
-    TODO 3. Use Color Scheme From Material Components Guide
-    This Defines Colors that will be used with the light theme
-    -->
+
     <color name="color_primary">#424242</color>
     <color name="color_primary_variant">#1b1b1b</color>
     <color name="color_secondary">#00acc1</color>
