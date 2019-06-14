@@ -45,7 +45,7 @@
             app:layout_constraintStart_toEndOf="@id/demo_time_text_view"
             android:layout_marginStart="@dimen/default_margin"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="?attr/colorOnBackground"
             android:drawableStart="@drawable/ic_map"
             android:drawableTint="?attr/colorSecondary"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"

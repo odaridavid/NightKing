@@ -6,8 +6,8 @@
     -->
     <color name="color_primary">#424242</color>
     <color name="color_primary_variant">#1b1b1b</color>
-    <color name="color_secondary">#ffd600</color>
-    <color name="color_secondary_variant">#ffff52</color>
+    <color name="color_secondary">#00acc1</color>
+    <color name="color_secondary_variant">#007c91</color>
 
     <color name="color_background">#424242</color>
     <color name="color_surface">#424242</color>
@@ -15,7 +15,7 @@
 
     <color name="color_on_primary">#ffffff</color>
     <color name="color_on_secondary">#000000</color>
-    <color name="color_on_background">#ffffff</color>
+    <color name="color_on_background">#757575</color>
     <color name="color_on_surface">#ffffff</color>
     <color name="color_on_error">#000000</color>
 </resources>
