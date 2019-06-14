@@ -3,5 +3,6 @@
     <item android:id="@+id/action_share"
           android:title="@string/label_share"
           android:icon="@drawable/ic_share"
+          app:iconTint="?attr/colorOnSurface"
           app:showAsAction="always"/>
 </menu>
