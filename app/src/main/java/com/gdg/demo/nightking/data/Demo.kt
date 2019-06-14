@@ -1,4 +1,4 @@
-package com.gdg.demo.nightking
+package com.gdg.demo.nightking.data
 
 data class Demo(val time: String, val title: String, val venue: String)
 

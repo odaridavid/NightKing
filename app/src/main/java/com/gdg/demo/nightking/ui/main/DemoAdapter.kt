@@ -1,4 +1,4 @@
-package com.gdg.demo.nightking
+package com.gdg.demo.nightking.ui.main
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.gdg.demo.nightking.data.Demo
+import com.gdg.demo.nightking.R
 
 class DemoAdapter internal constructor(
     context: Context
