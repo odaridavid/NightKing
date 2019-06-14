@@ -1,6 +1,6 @@
 # Night King
 
-This Branch contains **force dark** implementation.Check out TODOs with
+This Branch contains **DayNight Theme** implementation.Check out TODOs with
 highlighted steps
 
 ## Screenshots
