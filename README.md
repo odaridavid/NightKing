@@ -5,5 +5,5 @@ highlighted steps.
 
 ## Screenshots
 
-|![Dark Theme](screenshots/dark_theme.gif)|![Dark Theme](screenshots/dark_theme.gif)|
+|![Dark Theme](screenshots/dark_theme.gif)|![Dark Theme](screenshots/settings.gif)|
 |:--:|:--:|
