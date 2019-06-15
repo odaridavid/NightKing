@@ -6,11 +6,11 @@ import com.gdg.demo.nightking.prefs.ThemePreference
 import timber.log.Timber
 
 class NightKingApplication : Application() {
-    lateinit var repo: ThemePreference
+    lateinit var themePreferenceRepo: ThemePreference
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
-        repo = ThemePreference(pref)
+        themePreferenceRepo = ThemePreference(pref)
     }
 }

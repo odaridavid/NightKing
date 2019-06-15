@@ -9,23 +9,6 @@ class ThemePreference(private val sharedPreferences: SharedPreferences) {
     private val _appTheme: String?
         get() = sharedPreferences.getString(PREFERENCE_THEME_KEY, PREFERENCE_THEME_DEF_VAL)
 
-
-    var isDarkTheme: Boolean = false
-        get() = _appTheme == "Dark"
-        set(value) {
-            sharedPreferences
-                .edit()
-                .putString(
-                    PREFERENCE_THEME_KEY,
-                    if (value) {
-                        "Dark"
-                    } else {
-                        "Light"
-                    }
-                ).apply()
-            field = value
-        }
-
     private val _nightModeLive: MutableLiveData<String> = MutableLiveData()
     val nightModeLive: LiveData<String>
         get() = _nightModeLive
