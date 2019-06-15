@@ -26,10 +26,6 @@ class ThemePreference(private val sharedPreferences: SharedPreferences) {
             field = value
         }
 
-    private val _isDarkThemeLive: MutableLiveData<Boolean> = MutableLiveData()
-    val isDarkThemeLive: LiveData<Boolean>
-        get() = _isDarkThemeLive
-
     private val _nightModeLive: MutableLiveData<String> = MutableLiveData()
     val nightModeLive: LiveData<String>
         get() = _nightModeLive
@@ -39,15 +35,12 @@ class ThemePreference(private val sharedPreferences: SharedPreferences) {
             when (key) {
                 PREFERENCE_THEME_KEY -> {
                     _nightModeLive.value = _appTheme
-                    _isDarkThemeLive.value = isDarkTheme
                 }
             }
         }
 
     init {
         _nightModeLive.value = _appTheme
-        _isDarkThemeLive.value = isDarkTheme
-
         sharedPreferences.registerOnSharedPreferenceChangeListener(preferenceChangedListener)
     }
 
