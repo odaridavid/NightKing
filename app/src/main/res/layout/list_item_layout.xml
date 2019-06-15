@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/small_margin"/>
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/default_margin"/>
+
+    <TextView
+            android:id="@+id/demo_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/demo_venue_text_view"
+            android:textColor="@color/color_event_time"
+            tools:text="11:30 PM"/>
+    <TextView
+            android:id="@+id/demo_title_text_view"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top"
+            app:layout_constraintStart_toEndOf="@id/demo_time_text_view"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="Dark Theme"/>
+
+    <TextView
+            android:id="@+id/demo_venue_text_view"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/demo_title_text_view"
+            app:layout_constraintStart_toEndOf="@id/demo_time_text_view"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnBackground"
+            android:drawableStart="@drawable/ic_map"
+            android:drawableTint="@color/color_drawable_tint"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:drawablePadding="8dp"
+            tools:text="Room A"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/small_margin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

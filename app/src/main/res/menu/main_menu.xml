@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_share"
+          android:title="@string/label_share"
+          android:icon="@drawable/ic_share"
+          app:iconTint="?attr/colorOnSurface"
+          app:showAsAction="ifRoom"/>
+    <item android:id="@+id/settingsFragment"
+          android:title="@string/label_settings"
+          android:icon="@drawable/ic_settings"
+          app:iconTint="?attr/colorOnSurface"
+          app:showAsAction="always"/>
+</menu>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Night King</string>
+    <string name="label_share">Share</string>
+    <string name="description_simple_demo_image">Simple Demo Image</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="random">Bleeeeeeh</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_display_group">DIsplay</string>
+    <string name="def">Default</string>
 </resources>

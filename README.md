@@ -14,5 +14,8 @@ Android 9.+ SDK or newer(Required by force dark).
 Each Branch represents a segment of the presentation ,the steps are highlighted with `TODOS`.
 Clone the repo and checkout to a branch to get started.
 
+## Screenshots
 
+|![Dark Theme](screenshots/dark_theme.gif)|![Dark Theme](screenshots/settings.gif)|
+|:--:|:--:|
 
