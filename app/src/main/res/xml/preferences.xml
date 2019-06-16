@@ -6,7 +6,6 @@
             app:key="theme"
             app:title="@string/pref_theme_title"
             android:icon="@drawable/ic_theme"
-            app:entries="@array/theme_options"
             app:entryValues="@array/theme_values"
             android:layout_width="match_parent"
             android:layout_gravity="center"

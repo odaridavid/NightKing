@@ -1,6 +1,7 @@
 package com.gdg.demo.nightking.ui.settings
 
 
+import android.os.Build
 import android.os.Bundle
 import androidx.preference.ListPreference
 import androidx.preference.Preference
@@ -12,13 +13,15 @@ class SettingsFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
         val themePreference: ListPreference? = findPreference(THEME_KEY)
-        val themeArrayOptions = resources.getStringArray(R.array.theme_options)
+        val themeArrayOptionsAboveQ = resources.getStringArray(R.array.theme_options_above_q)
+        val themeArrayOptionsBelowQ = resources.getStringArray(R.array.theme_options_below_q)
+        themePreference?.entries = if (Build.VERSION.SDK_INT >= 29) themeArrayOptionsAboveQ else themeArrayOptionsBelowQ
         val themeArrayValues = resources.getStringArray(R.array.theme_values)
         themePreference?.summaryProvider = Preference.SummaryProvider<ListPreference> { preference ->
             when (preference.value) {
-                themeArrayValues[0] -> themeArrayOptions[0]
-                themeArrayValues[1] -> themeArrayOptions[1]
-                themeArrayValues[2] -> themeArrayOptions[2]
+                themeArrayValues[0] -> themeArrayOptionsAboveQ[0]
+                themeArrayValues[1] -> themeArrayOptionsAboveQ[1]
+                themeArrayValues[2] -> if (Build.VERSION.SDK_INT >= 29) themeArrayOptionsAboveQ[2] else themeArrayOptionsBelowQ[2]
                 else -> getString(R.string.def)
             }
         }

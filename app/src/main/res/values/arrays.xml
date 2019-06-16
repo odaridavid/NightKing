@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="theme_options">
+    <!--
+  TODO 1. Use Battery Saver if targeting devices on P and below otherwise using system default will result in
+         a light theme being applied on them
+  -->
+    <string-array name="theme_options_above_q">
         <item>Light Theme</item>
         <item>Dark Theme</item>
-        <!--
-        TODO 1. Use Battery Saver if targeting devices on P and below otherwise using system default will result in
-               a light theme being applied on them
-        -->
         <item>System Default</item>
+    </string-array>
+
+    <string-array name="theme_options_below_q">
+        <item>Light Theme</item>
+        <item>Dark Theme</item>
+        <item>Set By Battery Saver</item>
     </string-array>
 
     <string-array name="theme_values">
