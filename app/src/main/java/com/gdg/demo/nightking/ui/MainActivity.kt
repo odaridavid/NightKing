@@ -19,25 +19,20 @@ class MainActivity : AppCompatActivity() {
 //        val isNight =
 //            resources.configuration.uiMode.and(Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES
 //        Timber.d("is Night Theme = $isNight")
-        (application as NightKingApplication).themePreferenceRepo
+        (application as NightKingApplication)
+            .themePreferenceRepo
             .nightModeLive
             .observe(this) { nightMode ->
                 nightMode.let { theme ->
                     when (theme) {
-                        "Light" -> {
-                            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
-                        }
-                        "System" -> {
+                        "Light" -> delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
+                        "Dark" -> delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
+                        "System" ->
                             if (Build.VERSION.SDK_INT >= 29)
                                 delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
                             else
                                 delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
-                        }
-                        "Dark" -> {
-                            delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
-                        }
                     }
-
                 }
             }
     }
