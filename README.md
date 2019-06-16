@@ -15,7 +15,9 @@ Each Branch represents a segment of the presentation ,the steps are highlighted 
 Clone the repo and checkout to a branch to get started.
 
 The master branch provides an implementation using preference settings and 
-factors in both devices above and below Q
+factors in both devices above and below Q.
+
+[Presentation Slides](https://t.co/MViPXyFBgB)
 
 ## Screenshots
 
