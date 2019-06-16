@@ -1,4 +1,4 @@
-package com.gdg.demo.nightking.ui.main
+package com.gdg.demo.nightking.ui
 
 import android.os.Build
 import android.os.Bundle
