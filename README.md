@@ -7,7 +7,8 @@ wide dark theme in android Q.
 
 ## Prerequisites
 
-Android 9.+ SDK or newer(Required by force dark).
+Android 9.+ SDK or newer(Required by force dark branch).
+The Main Branch however does not.
 
 ## Guide
 
