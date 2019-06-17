@@ -25,13 +25,13 @@ class MainActivity : AppCompatActivity() {
             .observe(this) { nightMode ->
                 nightMode.let { theme ->
                     when (theme) {
-                        "Light" -> delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_NO
-                        "Dark" -> delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
+                        "Light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                        "Dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                         "System" ->
                             if (Build.VERSION.SDK_INT >= 29)
-                                delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                               AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
                             else
-                                delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
+                               AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY)
                     }
                 }
             }
