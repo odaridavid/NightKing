@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
-                  xmlns:android="http://schemas.android.com/apk/res/android" android:showDividers="end"
-                  android:title="@string/label_display_group" android:tag="di">
+<androidx.preference.PreferenceScreen
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:showDividers="end">
+
     <ListPreference
             app:key="theme"
             app:title="@string/pref_theme_title"
@@ -10,4 +12,5 @@
             android:layout_width="match_parent"
             android:layout_gravity="center"
             app:useSimpleSummaryProvider="true"/>
-</PreferenceScreen>
+
+</androidx.preference.PreferenceScreen>
