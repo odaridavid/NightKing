@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.gdg.demo.nightking.R
 import com.gdg.demo.nightking.data.dummyData
+import kotlinx.android.synthetic.main.fragment_demo.view.*
 
 /**
  * A simple [Fragment] subclass.
@@ -23,12 +23,14 @@ class DemoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_demo, container, false)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.demo_recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(this.activity)
+        view.demo_recycler_view.layoutManager = LinearLayoutManager(context)
         val demoAdapter = DemoAdapter(context!!)
         demoAdapter.setDemos(dummyData())
-        recyclerView.adapter = demoAdapter
-        recyclerView.setHasFixedSize(true)
+        view.demo_recycler_view.adapter = demoAdapter
+        view.demo_recycler_view.setHasFixedSize(true)
+        view.transport_fab.setOnClickListener { v ->
+            v.findNavController().navigate(R.id.action_demoFragment_to_transportFragment)
+        }
         setHasOptionsMenu(true)
         return view
     }
