@@ -3,4 +3,5 @@
     <dimen name="min_card_height">200dp</dimen>
     <dimen name="default_margin">16dp</dimen>
     <dimen name="small_margin">4dp</dimen>
+    <dimen name="toolbar_height">200dp</dimen>
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Night King</string>
+    <string name="app_name" translatable="false">Night King</string>
     <string name="label_share">Share</string>
 
     <!--Demo Fragment-->
