@@ -42,7 +42,7 @@ class DemoFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_share) {
-            Toast.makeText(context, context?.getString(R.string.random), Toast.LENGTH_LONG).show()
+            Toast.makeText(context, context?.getString(R.string.random_toast_message), Toast.LENGTH_LONG).show()
             return true
         }
         return NavigationUI
