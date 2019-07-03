@@ -12,6 +12,4 @@
     <string name="title_theme_preference">Theme</string>
     <string name="def">Default</string>
 
-    <!--Transport Fragment-->
-    <string name="label_fragment_transport">Transport</string>
 </resources>
