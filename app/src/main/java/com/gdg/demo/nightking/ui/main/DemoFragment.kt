@@ -28,9 +28,6 @@ class DemoFragment : Fragment() {
         demoAdapter.setDemos(dummyData())
         view.demo_recycler_view.adapter = demoAdapter
         view.demo_recycler_view.setHasFixedSize(true)
-        view.transport_fab.setOnClickListener { v ->
-            v.findNavController().navigate(R.id.action_demoFragment_to_transportFragment)
-        }
         setHasOptionsMenu(true)
         return view
     }
