@@ -8,7 +8,7 @@ wide dark theme in android Q.
 ## Prerequisites
 
 Android 9.+ SDK or newer(Required by force dark branch).
-The Main Branch however does not.
+The ```master``` branch however does not.
 
 ## Guide
 
@@ -19,6 +19,8 @@ The master branch provides an implementation using preference settings and
 factors in both devices above and below Q.
 
 [Presentation Slides](https://t.co/MViPXyFBgB)
+
+[Blog Post: Applying a Dark Theme](https://medium.com/@davidkibzodari/applying-a-dark-theme-to-your-android-app-a5eb6d20ab0c)
 
 ## Screenshots
 
