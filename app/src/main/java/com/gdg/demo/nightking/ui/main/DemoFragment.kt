@@ -9,10 +9,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.gdg.demo.nightking.R
 import com.gdg.demo.nightking.data.dummyData
+
 import kotlinx.android.synthetic.main.fragment_demo.*
+import kotlinx.android.synthetic.main.fragment_demo.view.*
+
 
 /**
  * A simple [Fragment] subclass.
@@ -25,12 +27,11 @@ class DemoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_demo, container, false)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.demo_recycler_view)
-        recyclerView.layoutManager = LinearLayoutManager(this.activity)
+        view.demo_recycler_view.layoutManager = LinearLayoutManager(context)
         val demoAdapter = DemoAdapter(context!!)
         demoAdapter.setDemos(dummyData())
-        recyclerView.adapter = demoAdapter
-        recyclerView.setHasFixedSize(true)
+        view.demo_recycler_view.adapter = demoAdapter
+        view.demo_recycler_view.setHasFixedSize(true)
         setHasOptionsMenu(true)
         return view
     }
@@ -49,7 +50,7 @@ class DemoFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_share) {
-            Toast.makeText(context, context?.getString(R.string.random), Toast.LENGTH_LONG).show()
+            Toast.makeText(context, context?.getString(R.string.random_toast_message), Toast.LENGTH_LONG).show()
             return true
         }
         return NavigationUI

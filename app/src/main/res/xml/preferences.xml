@@ -6,7 +6,7 @@
 
     <ListPreference
             app:key="theme"
-            app:title="@string/pref_theme_title"
+            app:title="@string/title_theme_preference"
             android:icon="@drawable/ic_theme"
             app:entryValues="@array/theme_values"
             android:layout_width="match_parent"

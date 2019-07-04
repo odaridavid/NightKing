@@ -6,7 +6,7 @@
           app:iconTint="?attr/colorOnSurface"
           app:showAsAction="ifRoom"/>
     <item android:id="@+id/settingsFragment"
-          android:title="@string/label_settings"
+          android:title="@string/label_fragment_settings"
           android:icon="@drawable/ic_settings"
           app:iconTint="?attr/colorOnSurface"
           app:showAsAction="always"/>
