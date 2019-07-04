@@ -7,9 +7,15 @@
               android:name="com.gdg.demo.nightking.ui.main.DemoFragment"
               android:label="@string/app_name"
               tools:layout="@layout/fragment_demo"/>
+    <action
+            android:id="@+id/actiondemoFragment_to_testFragment"
+    app:destination="@id/testDetails"/>
     <fragment android:id="@+id/settingsFragment"
               android:name="com.gdg.demo.nightking.ui.settings.SettingsFragment"
               android:label="@string/label_settings"
 
     />
+    <fragment android:id="@+id/testDetails" android:name="com.gdg.demo.nightking.ui.TestDetails"
+              android:label="TestDetails"
+    tools:layout="@layout/fragment_test_details"/>
 </navigation>
